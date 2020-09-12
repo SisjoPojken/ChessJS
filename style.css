@@ -1,0 +1,98 @@
+/* Make it easier to style the page by removing initial styling */
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html{
+    min-height: 100vh;;
+}
+
+body{
+    margin: 0;
+    background: radial-gradient(rgb(44, 53, 51),rgb(52, 52, 66));
+}
+
+.page-title{
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 6em;
+}
+.game-container{
+    margin: 100px;
+    margin-top: 5;
+    justify-content: center;
+}
+
+.game-info{
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 2em;
+}
+.game-info-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.chess-bord{
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    align-content: center;
+    justify-content: center;
+    grid-gap: 2px;
+    border-radius: 20px;
+    background-color: rgb(144, 163, 165);
+    padding: 20px;
+}
+
+.square{
+    background-color: white;
+    position: relative;
+    /* border-radius: 2px; */
+    width: 60px;
+    height: 60px;
+}
+.black-square{
+    background-color: black;
+}
+
+.piece{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 2.2rem;
+    width: 2.2rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    pointer-events: none;
+    border: solid 2px rgb(184, 177, 177);
+    /* vertical-align: middle; */
+    /* display: flex; */
+    /* align-self: center; */
+    /* align-content: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center;
+    align-content: center;
+    text-align: center;
+     */
+    background-color: rgb(191, 189, 201);
+    
+}
+
+span{
+    font-size: 1.6rem;
+}
+
+.white-player{
+    background-color: whitesmoke;
+}
+
+.rotated{
+    transform: translate(-50%,-50%) rotate(180deg);
+}
